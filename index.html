@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>JS Calculator</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>         
+  <div class="calcContainer">
+    <form name="calc">
+
+      <div class="row-1">
+        <input class="readOut" type="value" name="answer"/>
+      </div>
+
+      <div class="row-2">
+        <input class="ac-button" type="button" value= " AC " onclick="calc.answer.value = ''" id="ac"/>
+        <input class="divide-button" type="button" value= " / " onclick="calc.answer.value += '/'" />
+        <input class="multiply-button" type="button" value= " x " onclick="calc.answer.value += '*'" />
+      </div>
+
+      <div class="row-3">
+        <input class="seven-button" type="button" value= " 7 " onclick="calc.answer.value += '7'" />
+        <input class="eight-button" type="button" value= " 8 " onclick="calc.answer.value += '8'" />
+        <input class="nine-button" type="button" value= " 9 " onclick="calc.answer.value += '9'" />
+        <input class="minus-button" type="button" value= " - " onclick="calc.answer.value += '-'" />
+      </div>
+
+      <div class="row-4">
+        <input class="four-button" type="button" value= " 4 " onclick="calc.answer.value += '4'" />
+        <input class="five-button" type="button" value= " 5 " onclick="calc.answer.value += '5'" />
+        <input class="six-button" type="button" value= " 6 " onclick="calc.answer.value += '6'" />
+        <input class="plus-button" type="button" value= " + " onclick="calc.answer.value += '+'" />
+      </div>
+
+      <div class="row-5">
+        <input class="one-button" type="button" value= " 1 " onclick="calc.answer.value += '1'" />
+        <input class="two-button" type="button" value= " 2 " onclick="calc.answer.value += '2'" />
+        <input class="three-button" type="button" value= " 3 " onclick="calc.answer.value += '3'" />
+        <input class="equals-button" type="button" value= " = " onclick="calc.answer.value = eval(calc.answer.value)" id="equals" />
+      </div>
+
+      <div class="row-6">
+        <input class="zero-button" type="button" value= " 0 " onclick="calc.answer.value += '0'" />
+        <input class="percent-button" type="button" value= " % " onclick="calc.answer.value += '%'" />
+        <input class="decimal-button" type="button" value= " . " onclick="calc.answer.value += '.'" />
+      </div>            
+    </form>
+  </div>  
+</body>
+
+</html>
